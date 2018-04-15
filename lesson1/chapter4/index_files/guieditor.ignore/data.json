@@ -1,0 +1,145 @@
+{
+ "bowl": {
+  "main": {
+   "modId": "_sys/root",
+   "fields": {
+    "main": [
+     {
+      "modId": "PlainHTMLElements:PlainHTML/image",
+      "fields": {
+       "href": "",
+       "image_src": {
+        "resKey": "b4a0921f4c122fc5633a93f1eca6400e",
+        "path": "./index_files/resources/no_image.jpg",
+        "resType": "",
+        "webUrl": ""
+       },
+       "alt_text": ""
+      },
+      "anchor": "",
+      "dec": ""
+     },
+     {
+      "modId": "PlainHTMLElements:PlainHTML/MultiText",
+      "fields": {
+       "main": {
+        "src": "## プラグインの中身を知りたい時は小柳さんのGitHubを見にいきます。",
+        "editor": "markdown"
+       }
+      },
+      "anchor": "",
+      "dec": ""
+     },
+     {
+      "modId": "PlainHTMLElements:PlainHTML/image",
+      "fields": {
+       "href": "github.com/pickles2/px2-multitheme",
+       "image_src": {
+        "resKey": "4488743153b3e412a8913f9d498545d4",
+        "path": "./index_files/resources/github_tomk79.jpg",
+        "resType": "",
+        "webUrl": ""
+       },
+       "alt_text": ""
+      },
+      "anchor": "",
+      "dec": ""
+     },
+     {
+      "modId": "PlainHTMLElements:PlainHTML/MultiText",
+      "fields": {
+       "main": {
+        "src": "## Packagistを開くと右上にURLが記載されていますのでこれを開いてください。次のような画面が表示されますので<b>「px-files ⇒ php ⇒ template_utility.php」</b>の順に展開してください。",
+        "editor": "markdown"
+       }
+      },
+      "anchor": "",
+      "dec": ""
+     },
+     {
+      "modId": "PlainHTMLElements:PlainHTML/image",
+      "fields": {
+       "href": "",
+       "image_src": {
+        "resKey": "57f5e93f96b8ab3720cd0988bf0182be",
+        "path": "./index_files/resources/github_tomk79_1.jpg",
+        "resType": "",
+        "webUrl": ""
+       },
+       "alt_text": ""
+      },
+      "anchor": "",
+      "dec": ""
+     },
+     {
+      "modId": "PlainHTMLElements:PlainHTML/image",
+      "fields": {
+       "href": "",
+       "image_src": {
+        "resKey": "e304353f6285129e24827654b2e040c9",
+        "path": "./index_files/resources/github_tomk79_2.jpg",
+        "resType": "",
+        "webUrl": ""
+       },
+       "alt_text": ""
+      },
+      "anchor": "",
+      "dec": ""
+     },
+     {
+      "modId": "PlainHTMLElements:PlainHTML/image",
+      "fields": {
+       "href": "",
+       "image_src": {
+        "resKey": "bb144c95be00680e360d78a6bd161cd4",
+        "path": "./index_files/resources/github_tomk79_3.jpg",
+        "resType": "",
+        "webUrl": ""
+       },
+       "alt_text": ""
+      },
+      "anchor": "",
+      "dec": ""
+     },
+     {
+      "modId": "PlainHTMLElements:PlainHTML/MultiText",
+      "fields": {
+       "main": {
+        "src": "## template_utility.phpを開くと下のようなコードが出てきます。これが「プラグインの中身」です。以下のコードはパンくずを自動生成するプラグインです。\n",
+        "editor": "markdown"
+       }
+      },
+      "anchor": "",
+      "dec": ""
+     },
+     {
+      "modId": "PlainHTMLElements:PlainHTML/image",
+      "fields": {
+       "href": "",
+       "image_src": {
+        "resKey": "373f4534ea89a4ed31f4e6192ffa43a5",
+        "path": "./index_files/resources/github_tomk79_4.jpg",
+        "resType": "",
+        "webUrl": ""
+       },
+       "alt_text": ""
+      },
+      "anchor": "",
+      "dec": ""
+     },
+     {
+      "modId": "PlainHTMLElements:PlainHTML/MultiText",
+      "fields": {
+       "main": {
+        "src": "## このようにテーマはさまざまなプラグインを組み合わせることで、簡単にダイナミックなページレイアウトを作ることができます。次の章ではレイアウトについて詳しく見ていきましょう。",
+        "editor": "markdown"
+       }
+      },
+      "anchor": "",
+      "dec": ""
+     }
+    ]
+   }
+  }
+ }
+}

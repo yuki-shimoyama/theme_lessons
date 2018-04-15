@@ -1,0 +1,48 @@
+{
+ "bowl": {
+  "main": {
+   "modId": "_sys/root",
+   "fields": {
+    "main": [
+     {
+      "modId": "PlainHTMLElements:PlainHTML/image",
+      "fields": {
+       "href": "",
+       "image_src": {
+        "resKey": "84ad869d55f63c799cafc4a1b35948a7",
+        "path": "./index_files/resources/theme.jpg",
+        "resType": "",
+        "webUrl": ""
+       },
+       "alt_text": ""
+      },
+      "anchor": "",
+      "dec": ""
+     },
+     {
+      "modId": "PlainHTMLElements:PlainHTML/MultiText",
+      "fields": {
+       "main": {
+        "src": "## テーマとは、ページを構成する要素の中で、ヘッダー、フッター、ナビゲーションなど、サイト全体を通して共通のルールで作ることができる部分を一元管理する考え方のことです。コンテンツ以外のHTMLを自動的に作ってくれる大変便利なものです。",
+        "editor": "markdown"
+       }
+      },
+      "anchor": "",
+      "dec": ""
+     },
+     {
+      "modId": "PlainHTMLElements:PlainHTML/MultiText",
+      "fields": {
+       "main": {
+        "src": "## 次のチャプターからはテーマがどのように作られているのかを簡単に見ていきましょう。",
+        "editor": "markdown"
+       }
+      },
+      "anchor": "",
+      "dec": ""
+     }
+    ]
+   }
+  }
+ }
+}

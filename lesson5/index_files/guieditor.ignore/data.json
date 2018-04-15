@@ -1,0 +1,23 @@
+{
+ "bowl": {
+  "main": {
+   "modId": "_sys/root",
+   "fields": {
+    "main": [
+     {
+      "modId": "FESS:parts_links/link",
+      "fields": {
+       "href": "/lesson5/chapter1/index.html",
+       "text": {
+        "src": "## Chapter1：自作の関数を作って表示してみよう！",
+        "editor": "markdown"
+       }
+      },
+      "anchor": "",
+      "dec": ""
+     }
+    ]
+   }
+  }
+ }
+}

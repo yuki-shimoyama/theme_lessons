@@ -1,0 +1,178 @@
+<?php
+	require_once( __DIR__.'/php/top.php' );
+	$theme_top = new pickles2\themes\pickles\theme_top($px, $theme);
+//↓ $page_info にページの情報を格納しています。
+//   var_dump( $page_info ); で、変数の内容を確認できます。
+    $page_info = $px->site()->get_current_page_info();
+?>
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title><?= htmlspecialchars($px->conf()->name) ?></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700">
+    <link rel="stylesheet" href="<?= htmlspecialchars($theme -> files('/styles/stylesheet.css')); ?>">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="<?= htmlspecialchars($theme -> files('/top_js/script.js')); ?>"></script>
+	<!--コンテンツの環境構築を読み込んで出力 -->
+	<?= $px->get_contents_manifesto(); ?>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <div class="header-title">
+            <a href="index.html"><img class="logo" src="<?= htmlspecialchars($theme->files('/images/header-logo_px.svg')); ?>"></a>
+        </div>
+        <div class="header-menu"><?= $theme_top->mk_global_menu() ?>
+          <!--<ul class="header-menu-right">
+            <li>
+              <a href="beginners.html">初めての方へ</a>
+            </li>
+            <li>
+              <a href="mission.html">ミッション</a>
+            </li>
+            <li>
+              <a href="schedule.html">スケジュール</a>
+            </li>
+            <li>
+              <a href="hotel.html">宿泊施設</a>
+            </li>
+            <li>
+              <a href="contact.html">お問い合わせ</a>
+            </li>
+            <li>
+              <a href="review.html">参加者の声</a>
+            </li>
+        </ul>-->
+        </div>
+      </div>
+    </header>
+
+	<!-- modal -->
+    <div class="signup-modal-wrapper" id="signup-modal">
+      <div class="modal">
+        <div id="close-modal">
+          <i class="fa fa-2x fa-times"></i>
+        </div>
+        <div id="signup-form">
+          <h2>テーマ開発入門講座</h2>
+          <p>4月15日（日）麻布十番スタジオ</p>
+		  <p>目標１：テーマを20個つくる</p>
+		  <p>目標２：モジュールセットを１個つくる</p>
+          </form>
+        </div>
+      </div>
+    </div>
+
+	<!-- Bresdcrumbs -->
+<!-- パンくずはここから -->
+    <div class="breadcrumbs"><?= $theme->mk_breadcrumb() ?>
+        <!--<ul class="breadcrumbs-inner">
+            <li>
+                <a href="/"><i class="fa fa-home"></i></a>
+            </li>
+            <li>
+                <a href="/lesson1/">テーマを知る</a>
+            </li>
+            <li>
+                <span>テーマとは？</span>
+            </li>
+        </ul>-->
+    </div>
+<!-- パンくずはここまで -->
+
+    <!-- Top content -->
+    <div id="home" class="top-section">
+      <div class="inner-bg">
+        <div class="container">
+          <div class="top-description">
+            <h1>ENJOY A CREATING.<br>ENJOY A CAMP.</h1>
+            <p>開発合宿を通して、新しい自分を見つけよう。</p>
+          </div>
+          <div class="top-detail">
+            <a id="read-more" class="btn btn-top-white btn-lg signup-show">もっと詳しく</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Social -->
+    <div class="social-section">
+      <div class="container">
+        <div class="section-title">
+          <h3>Follow Us!</h3>
+        </div>
+        <div class="follow-us">
+          <a href="https://ja-jp.facebook.com/" class="social-icon" target='_blank'>
+            <i class="fa fa-facebook"></i>
+          </a>
+          <a href="https://twitter.com/login?lang=ja" class="social-icon" target='_blank'>
+            <i class="fa fa-twitter"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+	<!-- Mega footer -->
+    <div class="mega-footer">
+        <div class="container">
+            <nav class="theme_megafooter_navi"><?= $theme->mk_megafooter_menu() ?>
+                <!--<ul>
+                    <li><a href="/lesson1/" class="current">テーマを知る</a>
+                        <ul>
+                            <li><a href="/lesson1/chapter1/" class="current">テーマとは？</a></li>
+                            <li><a href="/lesson1/chapter2/">テーマってどうやって作るの？</a></li>
+                            <li><a href="/lesson1/chapter3/">テーマのプラグインはどこで公開されているの？</a></li>
+                            <li><a href="/lesson1/chapter4/">プラグインの中身を知りたい時はどこを見るの？</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/lesson2/">レイアウトを知る</a>
+                        <ul>
+                            <li><a href="/lesson2/chapter1/">レイアウトとは？</a></li>
+                            <li><a href="/lesson2/chapter2/">サイトマップからページ名を出力するには？</a></li>
+                            <li><a href="/lesson2/chapter3/">サイトマップからメタタグを出力するには？</a></li>
+                            <li><a href="/lesson2/chapter4/">ページ名を＜h1＞用に出力するには？</a></li>
+                            <li><a href="/lesson2/chapter5/">レイアウトのミニマム構成とは？</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/lesson3/">読み込んでみよう</a>
+                        <ul>
+                            <li><a href="/lesson3/chapter1/">外部CSSの読み込みに挑戦してみよう！</a></li>
+                            <li><a href="/lesson3/chapter2/">外部JSの読み込みに挑戦してみよう！</a></li>
+                            <li><a href="/lesson3/chapter3/">画像の読み込みに挑戦してみよう！</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/lesson4/">置き換えてみよう</a>
+                        <ul>
+                            <li><a href="/lesson4/chapter1/">パンくずをPHPに置き換えてみよう！</a></li>
+                            <li><a href="/lesson4/chapter2/">グロナビをPHPに置き換えてみよう！</a></li>
+                            <li><a href="/lesson4/chapter3/">サブメニューをPHPに置き換えてみよう！</a></li>
+                            <li><a href="/lesson4/chapter4/">サイドメニューをPHPに置き換えてみよう！</a></li>
+                            <li><a href="/lesson4/chapter5/">メガフッターをPHPに置き換えてみよう！</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/lesson5/">自作してみよう</a>
+                        <ul>
+                            <li><a href="/lesson5/chapter1/">自作の関数を作って表示してみよう！</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="https://packagist.org/packages/pickles2/px2-multitheme">Packagist</a>
+                    </li>
+                </ul>-->
+        	</nav>
+        </div>
+    </div>
+
+<!-- footer -->
+    <footer>
+      <div class="container">
+        <div class="copyright">
+            ©2018- Pickles2 Development Camp Ploject.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

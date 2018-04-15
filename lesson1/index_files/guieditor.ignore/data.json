@@ -1,0 +1,61 @@
+{
+ "bowl": {
+  "main": {
+   "modId": "_sys/root",
+   "fields": {
+    "main": [
+     {
+      "modId": "FESS:parts_links/link",
+      "fields": {
+       "href": "/lesson1/chapter1/index.html",
+       "text": {
+        "src": "## Chapter1：テーマとは？",
+        "editor": "markdown"
+       }
+      },
+      "anchor": "",
+      "dec": ""
+     },
+     {
+      "modId": "FESS:parts_links/link",
+      "fields": {
+       "href": "/lesson1/chapter2/index.html",
+       "text": {
+        "src": "## Chapter2：テーマってどうやって作られてるの？",
+        "editor": "markdown"
+       }
+      },
+      "anchor": "",
+      "dec": ""
+     },
+     {
+      "modId": "FESS:parts_links/link",
+      "fields": {
+       "href": "/lesson1/chapter3/index.html",
+       "text": {
+        "src": "## Chapter3：テーマのプラグインってどこで公開されているの？",
+        "editor": "markdown"
+       }
+      },
+      "anchor": "",
+      "dec": ""
+     },
+     {
+      "modId": "FESS:parts_links/link",
+      "fields": {
+       "href": "/lesson1/chapter4/index.html",
+       "text": {
+        "src": "## Chpater4：プラグインの中身を知りたい時はどこを見るの？",
+        "editor": "markdown"
+       }
+      },
+      "anchor": "",
+      "dec": ""
+     }
+    ]
+   },
+   "anchor": "",
+   "dec": ""
+  }
+ }
+}

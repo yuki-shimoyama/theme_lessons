@@ -1,0 +1,35 @@
+{
+ "bowl": {
+  "main": {
+   "modId": "_sys/root",
+   "fields": {
+    "main": [
+     {
+      "modId": "PlainHTMLElements:PlainHTML/image",
+      "fields": {
+       "href": "",
+       "image_src": {
+        "resKey": "43b57bda2116578e5f57faab4e28daf9",
+        "path": "./index_files/resources/no_image.jpg",
+        "resType": "",
+        "webUrl": ""
+       },
+       "alt_text": ""
+      },
+      "anchor": "",
+      "dec": ""
+     },
+     {
+      "modId": "PlainHTMLElements:PlainHTML/MultiText",
+      "fields": {
+       "main": {
+        "src": "",
+        "editor": "markdown"
+       }
+      }
+     }
+    ]
+   }
+  }
+ }
+}

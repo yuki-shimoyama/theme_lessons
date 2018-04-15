@@ -1,0 +1,73 @@
+{
+ "bowl": {
+  "main": {
+   "modId": "_sys/root",
+   "fields": {
+    "main": [
+     {
+      "modId": "FESS:parts_links/link",
+      "fields": {
+       "href": "/lesson4/chapter1/index.html",
+       "text": {
+        "src": "## Chapter1：パンくずをPHPに置き換えてみよう！",
+        "editor": "markdown"
+       }
+      },
+      "anchor": "",
+      "dec": ""
+     },
+     {
+      "modId": "FESS:parts_links/link",
+      "fields": {
+       "href": "/lesson4/chapter2/index.html",
+       "text": {
+        "src": "## Chapter2：グロナビをPHPに置き換えてみよう！",
+        "editor": "markdown"
+       }
+      },
+      "anchor": "",
+      "dec": ""
+     },
+     {
+      "modId": "FESS:parts_links/link",
+      "fields": {
+       "href": "/lesson4/chapter3/index.html",
+       "text": {
+        "src": "## Chapter3：サブメニューをPHPに置き換えてみよう！",
+        "editor": "markdown"
+       }
+      },
+      "anchor": "",
+      "dec": ""
+     },
+     {
+      "modId": "FESS:parts_links/link",
+      "fields": {
+       "href": "/lesson4/chapter4/index.html",
+       "text": {
+        "src": "## Chapter4：サイドメニューをPHPに置き換えてみよう！",
+        "editor": "markdown"
+       }
+      },
+      "anchor": "",
+      "dec": ""
+     },
+     {
+      "modId": "FESS:parts_links/link",
+      "fields": {
+       "href": "/lesson4/chapter5/index.html",
+       "text": {
+        "src": "## Chapter5：メガフッターをPHPに置き換えてみよう！",
+        "editor": "markdown"
+       }
+      },
+      "anchor": "",
+      "dec": ""
+     }
+    ]
+   },
+   "anchor": "",
+   "dec": ""
+  }
+ }
+}

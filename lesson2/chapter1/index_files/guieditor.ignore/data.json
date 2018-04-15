@@ -1,0 +1,59 @@
+{
+ "bowl": {
+  "main": {
+   "modId": "_sys/root",
+   "fields": {
+    "main": [
+     {
+      "modId": "PlainHTMLElements:PlainHTML/image",
+      "fields": {
+       "href": "",
+       "image_src": {
+        "resKey": "c3196e4ebd1b2d3651995e41cdc707ac",
+        "path": "./index_files/resources/no_image.jpg",
+        "resType": "",
+        "webUrl": ""
+       },
+       "alt_text": ""
+      },
+      "anchor": "",
+      "dec": ""
+     },
+     {
+      "modId": "PlainHTMLElements:PlainHTML/MultiText",
+      "fields": {
+       "main": {
+        "src": "## レイアウトとは各テーマに複数作ることができるテンプレートのことです。サイトマップの「layout」列にレイアウト名を指定することで各ページに適用することができます。何も指定しない場合は「default」レイアウトが適用されます。",
+        "editor": "markdown"
+       }
+      },
+      "anchor": "",
+      "dec": ""
+     },
+     {
+      "modId": "PlainHTMLElements:PlainHTML/MultiText",
+      "fields": {
+       "main": {
+        "src": "<h2>Pickles2テーマの初期状態では以下のレイアウトが入っています。</h2>\n<h2><b>\n<ul>\n    <li>default（標準レイアウト）</li>\n    <li>top（トップページ用レイアウト）</li>\n    <li>plain（＜body＞の直下にコンテンツエリアがあるレイアウト）</li>\n    <li>popup（ポップアップウィンドウ用レイアウト）</li>\n    <li>naked（コンテンツエリアのみのレイアウト）</li>\n</ul>\n</h2></b>",
+        "editor": ""
+       }
+      },
+      "anchor": "",
+      "dec": ""
+     },
+     {
+      "modId": "PlainHTMLElements:PlainHTML/MultiText",
+      "fields": {
+       "main": {
+        "src": "## レイアウトはテーマ同様に後から追加したり削除することも可能です。次のチャプターからはサイトマップに登録している情報をレイアウトに出力していく方法を見ていきましょう。",
+        "editor": "markdown"
+       }
+      },
+      "anchor": "",
+      "dec": ""
+     }
+    ]
+   }
+  }
+ }
+}

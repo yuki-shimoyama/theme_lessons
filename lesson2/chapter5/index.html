@@ -1,0 +1,54 @@
+<img src="./index_files/resources/no_image.jpg" alt="" /><h2 id="-b-h1-head-body-b-">このチャプターではレイアウトのミニマム構成について詳しく見ていきたいと思います。以下のソースがレイアウトに必要な<b>「ページ名」「メタディスクリプション」「メタキーワード」「ページ名＜h1＞用」「コンテンツ（モジュール）の環境構築」「コンテンツからのheadセクション用ソース」「コンテンツのソース」「コンテンツからのbodyセクション末尾用ソース」</b>を組み込んだミニマム構成となります。</h2>
+<h2 id="-font-color-d14-font-font-color-fc2-font-"><font color="#d14">赤文字</font>で書いた部分はこれまでに学習してきた内容なので、みなさんバッチリ頭に入っていると思いますが、<font color="#fc2">黄文字</font>で書いた①〜④部分は今回新しく出てきた内容なので詳しく解説していきたいと思います。</h2>
+<div class="sourceview">
+<pre class="brush: html;">
+&lt;!doctype html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset=&quot;UTF-8&quot; &gt;
+<font color="red">&lt;!-- サイトマップからページ名を出力 --&gt;
+        &lt;title&gt;&lt;?= htmlspecialchars($px-&gt;site()-&gt;get_current_page_info(&#039;title_full&#039;)); ?&gt;&lt;/title&gt;</font>
+
+<font color="red">&lt;!-- サイトマップからメタディスクリプションを出力 --&gt;
+        &lt;meta name=&quot;description&quot; content=&quot;&lt;?= htmlspecialchars($px-&gt;site()-&gt;get_current_page_info(&#039;description&#039;)); ?&gt;&quot;&gt;</font>
+
+<font color="red">&lt;!-- サイトマップからメタキーワードを出力 --&gt;
+        &lt;meta name=&quot;keywords&quot; content=&quot;&lt;?= htmlspecialchars($px-&gt;site()-&gt;get_current_page_info(&#039;keywords&#039;)); ?&gt;&quot;&gt;</font>
+        
+<font color="yellow">&lt;!-- ① コンテンツの環境構築を読み込んで出力 --&gt;
+        &lt;?= $px-&gt;get_contents_manifesto(); ?&gt;</font>
+        
+<font color="yellow">&lt;!-- ② コンテンツから受け取ったheadセクション用のソースを出力 --&gt;
+        &lt;?= $px-&gt;bowl()-&gt;get_clean(&#039;head&#039;); ?&gt;</font>
+    &lt;/head&gt;
+    &lt;body&gt;
+    
+<font color="red">&lt;!-- サイトマップからページ名＜h1＞用を出力 --&gt;
+        &lt;h1&gt;&lt;?= preg_replace(&#039;/\r\n|\r|\n/s&#039;, &#039;&lt;br /&gt;&#039;, htmlspecialchars($px-&gt;site()-&gt;get_current_page_info(&#039;title_h1&#039;)) ); ?&gt;&lt;/h1&gt;</font>
+            &lt;div class=&quot;contents&quot;&gt;
+            
+<font color="yellow">&lt;!-- ③ コンテンツから受け取ったコンテンツエリアのソースを出力 --&gt;
+                &lt;?= $px-&gt;bowl()-&gt;get_clean(); ?&gt;</font>
+            &lt;/div&gt;
+            
+<font color="yellow">&lt;!-- ④ コンテンツから受け取ったbodyセクションの最後に出力するソースを出力 --&gt;
+        &lt;?= $px-&gt;bowl()-&gt;get_clean(&#039;foot&#039;); ?&gt;</font>
+    &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</div><h2>
+    <ul>
+        <li>① コンテンツの環境構築を読み込んで出力
+        <p>コンテンツのHTMLコードが本来意図した通りに表示されるためには、それに必要なCSSやJavaScriptなどの環境を読み込む必要があります。各プロジェクトは「コンテンツ向けに提供する環境設定を<font color="#d14">/common/contents_manifesto.ignore.php</font>に置く」という約束をすることで、たとえ別のテーマに変更したとしてもコンテンツの表示を保証することができます。</p>
+        </li>
+        <li>② コンテンツから受け取ったheadセクション用のソースを出力
+        <p>コンテンツ制作者がコンテンツ独自のCSSやJavaScriptを定義することがありますが、直接テーマを操作することはできないため、ここでそれを受け取ってテーマのheadセクション内に表示するという役割を果たします。コンテンツ制作者はコンテンツ内に「<font color="#d14">$px-&gt;bowl()-&gt;put(&#039;HTMLコード&#039;, &#039;head&#039;)</font>」と記述することでHTMLを渡すことができます。</p>
+        </li>
+        <li>③ コンテンツから受け取ったコンテンツエリアのソースを出力
+        <p>Pickles2のコンテンツ編集で制作したコンテンツは全てここに表示されます。コンテンツは必ず「<font color="#d14">class="contents"</font>」の要素内に記述する必要がありますので注意しましょう。</p>
+        </li>
+        <li>④ コンテンツから受け取ったbodyセクションの最後に出力するソースを出力
+        <p>②同様にコンテンツ制作者が独自に定義したCSSやJavascriptを受け取ってテーマのbodyセクションの一番最後に表示するという役割を果たします。コンテンツ制作者はコンテンツ内に「<font color="#d14">$px-&gt;bowl()-&gt;put(&#039;HTMLコード&#039;, &#039;foot&#039;)</font>」と記述することでHTMLを渡すことができます。</p>
+        </li>
+    </ul>
+</h2><h2 id="-default-">ここまでのチャプターでテーマとレイアウトのことをだいぶわかってもらえたのではないかと思います。次の章ではこれまで学んできたことを実際にやってみて「defaultレイアウト」を完成させていきましょう。</h2>

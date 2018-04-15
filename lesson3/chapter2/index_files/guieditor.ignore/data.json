@@ -1,0 +1,70 @@
+{
+ "bowl": {
+  "main": {
+   "modId": "_sys/root",
+   "fields": {
+    "main": [
+     {
+      "modId": "PlainHTMLElements:PlainHTML/image",
+      "fields": {
+       "href": "",
+       "image_src": {
+        "resKey": "f0e37df109f3b1e24cae2a149abd5201",
+        "path": "./index_files/resources/no_image.jpg",
+        "resType": "",
+        "webUrl": ""
+       },
+       "alt_text": ""
+      },
+      "anchor": "",
+      "dec": ""
+     },
+     {
+      "modId": "PlainHTMLElements:PlainHTML/MultiText",
+      "fields": {
+       "main": {
+        "src": "## 外部JavaScriptを読み込む場合にはheadセクション内またはbodyセクション最下部に「<font color=\"#d14\">&lt;script src=&quot;&lt;?= htmlspecialchars( $theme -&gt; files(&#039;/フォルダ名/ファイル名&#039;)); ?&gt;&quot;&gt;&lt;/script&gt;</font>」と記述します。",
+        "editor": "markdown"
+       }
+      },
+      "anchor": "",
+      "dec": ""
+     },
+     {
+      "modId": "PlainHTMLElements:PlainHTML/MultiText",
+      "fields": {
+       "main": {
+        "src": "## JSファイルを置く場所は「<font color=\"#d14\">px-files &gt; themes &gt; pickles2 &gt; theme_files &gt; フォルダ名</font>」となりますが、初期状態ではフォルダがありませんのでtheme_filesフォルダの下に新しくフォルダを作成してから置いてください。",
+        "editor": "markdown"
+       }
+      },
+      "anchor": "",
+      "dec": ""
+     },
+     {
+      "modId": "PlainHTMLElements:PlainHTML/MultiText",
+      "fields": {
+       "main": {
+        "src": "## こちらもレイアウトファイルとの相対関係でHTMLとして出力される際には「&lt;script src=&quot;/theme_files/フォルダ名/ファイル名&quot;&gt;&lt;/script&gt;」となりそうですが、実際には「&lt;script src=&quot;/common/px_resources/p/theme/pickles2/フォルダ名/ファイル名&quot;&gt;&lt;/script&gt;」と出力されますので覚えておくと良いでしょう。",
+        "editor": "markdown"
+       }
+      },
+      "anchor": "",
+      "dec": ""
+     },
+     {
+      "modId": "PlainHTMLElements:PlainHTML/MultiText",
+      "fields": {
+       "main": {
+        "src": "## では実際にやってみてうまくいったら次のチャプターに進みましょう。次のチャプターでは画像の読み込みに挑戦してみましょう。",
+        "editor": "markdown"
+       }
+      },
+      "anchor": "",
+      "dec": ""
+     }
+    ]
+   }
+  }
+ }
+}

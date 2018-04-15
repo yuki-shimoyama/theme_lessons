@@ -1,0 +1,47 @@
+{
+ "bowl": {
+  "main": {
+   "modId": "_sys/root",
+   "fields": {
+    "main": [
+     {
+      "modId": "FESS:parts_links/link",
+      "fields": {
+       "href": "/lesson3/chapter1/index.html",
+       "text": {
+        "src": "## Chapter1：外部CSSの読み込みに挑戦してみよう！",
+        "editor": "markdown"
+       }
+      },
+      "anchor": "",
+      "dec": ""
+     },
+     {
+      "modId": "FESS:parts_links/link",
+      "fields": {
+       "href": "/lesson3/chapter2/index.html",
+       "text": {
+        "src": "## Chapter2：外部JSの読み込みに挑戦してみよう！",
+        "editor": "markdown"
+       }
+      },
+      "anchor": "",
+      "dec": ""
+     },
+     {
+      "modId": "FESS:parts_links/link",
+      "fields": {
+       "href": "/lesson3/chapter3/index.html",
+       "text": {
+        "src": "## Chapter3：画像の読み込みに挑戦してみよう！",
+        "editor": "markdown"
+       }
+      },
+      "anchor": "",
+      "dec": ""
+     }
+    ]
+   }
+  }
+ }
+}

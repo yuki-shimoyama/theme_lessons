@@ -1,0 +1,74 @@
+{
+ "bowl": {
+  "main": {
+   "modId": "_sys/root",
+   "fields": {
+    "main": [
+     {
+      "modId": "PlainHTMLElements:PlainHTML/image",
+      "fields": {
+       "href": "",
+       "image_src": {
+        "resKey": "84d1f57d6a673f6203fa4e2a37236473",
+        "path": "./index_files/resources/no_image.jpg",
+        "resType": "",
+        "webUrl": ""
+       },
+       "alt_text": ""
+      },
+      "anchor": "",
+      "dec": ""
+     },
+     {
+      "modId": "PlainHTMLElements:PlainHTML/MultiText",
+      "fields": {
+       "main": {
+        "src": "## サイトマップからメタタグを出力するにはレイアウトのソースの中にある＜head＞＜/head＞タグの間に以下のようなPHPを挿入する必要があります。",
+        "editor": "markdown"
+       }
+      },
+      "anchor": "",
+      "dec": ""
+     },
+     {
+      "modId": "PlainHTMLElements:PlainHTML/image",
+      "fields": {
+       "href": "",
+       "image_src": {
+        "resKey": "3b9cfaaa6fa8660562502bb6a864ff2d",
+        "path": "./index_files/resources/sitemap_title_4.jpg",
+        "resType": "",
+        "webUrl": ""
+       },
+       "alt_text": ""
+      },
+      "anchor": "",
+      "dec": ""
+     },
+     {
+      "modId": "PlainHTMLElements:PlainHTML/MultiText",
+      "fields": {
+       "main": {
+        "src": "## <font color=\"#d14\">赤文字</font>の部分を上記のように「<font color=\"#d14\">'keywords'</font>」にした場合はサイトマップのＱ列にある「keywordsカラム」から「metaキーワード」が出力され、「<font color=\"#d14\">'description'</font>」にした場合はサイトマップのＲ列にある「descriptionカラム」から「metaディスクリプション」が出力されるようになります。",
+        "editor": "markdown"
+       }
+      },
+      "anchor": "",
+      "dec": ""
+     },
+     {
+      "modId": "PlainHTMLElements:PlainHTML/MultiText",
+      "fields": {
+       "main": {
+        "src": "## 「keywordsカラム」「descriptionカラム」に何も設定されていない場合、それぞれ何も出力されませんので必要に応じて設定していきましょう。次のチャプターではページ名を＜h1＞用に出力する方法について詳しく見ていきましょう。",
+        "editor": "markdown"
+       }
+      },
+      "anchor": "",
+      "dec": ""
+     }
+    ]
+   }
+  }
+ }
+}

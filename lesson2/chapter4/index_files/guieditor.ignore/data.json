@@ -1,0 +1,74 @@
+{
+ "bowl": {
+  "main": {
+   "modId": "_sys/root",
+   "fields": {
+    "main": [
+     {
+      "modId": "PlainHTMLElements:PlainHTML/image",
+      "fields": {
+       "href": "",
+       "image_src": {
+        "resKey": "37b1b08122ac09f45bf9060f7a9921cc",
+        "path": "./index_files/resources/no_image.jpg",
+        "resType": "",
+        "webUrl": ""
+       },
+       "alt_text": ""
+      },
+      "anchor": "",
+      "dec": ""
+     },
+     {
+      "modId": "PlainHTMLElements:PlainHTML/MultiText",
+      "fields": {
+       "main": {
+        "src": "## サイトマップからページ名＜h1＞用を出力するにはレイアウトのソースの中にある＜h1＞＜/h1＞タグの間に以下のようなPHPを挿入する必要があります。",
+        "editor": "markdown"
+       }
+      },
+      "anchor": "",
+      "dec": ""
+     },
+     {
+      "modId": "PlainHTMLElements:PlainHTML/image",
+      "fields": {
+       "href": "",
+       "image_src": {
+        "resKey": "146e834a1540b27294ba96787716bcb4",
+        "path": "./index_files/resources/github_tomk79_4.jpg",
+        "resType": "",
+        "webUrl": ""
+       },
+       "alt_text": ""
+      },
+      "anchor": "",
+      "dec": ""
+     },
+     {
+      "modId": "PlainHTMLElements:PlainHTML/MultiText",
+      "fields": {
+       "main": {
+        "src": "## 他のCMSなどでは＜h1＞はコンテンツに含まれることもありますが、Pickles2ではテーマに組み込むのが基本的な考え方です。これは「＜h1＞は統一されたスタイルで統一された位置に表示されること、ナビゲーション構造（ユーザーがアクセスしたページが何かを示す構造）を成立させるためには必要不可欠な要素であること」がその理由です。",
+        "editor": "markdown"
+       }
+      },
+      "anchor": "",
+      "dec": ""
+     },
+     {
+      "modId": "PlainHTMLElements:PlainHTML/MultiText",
+      "fields": {
+       "main": {
+        "src": "## ページ名＜h1＞用の出力は文字列に改行が含まれていることがあるため少し特殊です。HTML特殊文字（htmlspecialchars()）に加え、改行コードを改行タグに置き換える必要があることに注意しましょう。次のチャプターではレイアウトのミニマム構成について詳しく見ていきましょう。",
+        "editor": "markdown"
+       }
+      },
+      "anchor": "",
+      "dec": ""
+     }
+    ]
+   }
+  }
+ }
+}

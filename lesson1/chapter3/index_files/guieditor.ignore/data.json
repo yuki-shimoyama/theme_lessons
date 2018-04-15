@@ -1,0 +1,59 @@
+{
+ "bowl": {
+  "main": {
+   "modId": "_sys/root",
+   "fields": {
+    "main": [
+     {
+      "modId": "PlainHTMLElements:PlainHTML/image",
+      "fields": {
+       "href": "",
+       "image_src": {
+        "resKey": "45a95c654aeb403e5bbeb9124cf2be06",
+        "path": "./index_files/resources/no_image.jpg",
+        "resType": "",
+        "webUrl": ""
+       },
+       "alt_text": ""
+      },
+      "anchor": "",
+      "dec": ""
+     },
+     {
+      "modId": "PlainHTMLElements:PlainHTML/MultiText",
+      "fields": {
+       "main": {
+        "src": "## テーマのプラグインは「<font color=\"red\"><a href=\"https://packagist.org/packages/pickles2/px2-multitheme\" target=\"_blank\">Packagist</a></font>」というWebサイト上で公開されています。いつでも閲覧できるようにグローバルナビゲーションの右端にも配置していますので、必要な時にのぞいてみてください。",
+        "editor": "markdown"
+       }
+      },
+      "anchor": "",
+      "dec": ""
+     },
+     {
+      "modId": "PlainHTMLElements:PlainHTML/MultiText",
+      "fields": {
+       "main": {
+        "src": "<h2>Packagistで公開されているテーマプラグインの一部をご紹介します。</h2>\n<h2>\n    <ul>\n        <li><b>グローバルナビゲーション<br>　　⇒ $theme->mk_global_menu()</b></li>\n        <li><b>サブメニュー<br>　　⇒ $theme->mk_sub_menu()</b></li>\n        <li><b>ショルダーナビ<br>　　⇒ $theme->mk_shoulder_menu()</b></li>\n        <li><b>パンくず<br>　　⇒ $theme->mk_breadcrumb()</b></li>\n        <li><b>メガフッター<br>　　⇒ $theme->mk_megafooter_menu()</b></li>\n    </ul>\n</h2>",
+        "editor": ""
+       }
+      },
+      "anchor": "",
+      "dec": ""
+     },
+     {
+      "modId": "PlainHTMLElements:PlainHTML/MultiText",
+      "fields": {
+       "main": {
+        "src": "## これらのプラグインをHTMLソースの中に挿入することで、さまざまな機能を簡単に実装することができます。次のチャプターではこのプラグインの中身について詳しく見ていきたいと思います。",
+        "editor": "markdown"
+       }
+      },
+      "anchor": "",
+      "dec": ""
+     }
+    ]
+   }
+  }
+ }
+}

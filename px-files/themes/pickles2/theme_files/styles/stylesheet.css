@@ -1,0 +1,389 @@
+@charset "utf-8";
+/*-------  ここから共通のCSS  --------*/
+* {
+  box-sizing: border-box;
+}
+
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p,
+form, input, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Hiragino Kaku Gothic ProN W3', sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  font-size: 14px;
+  color: #888;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #323a45;
+  transition: all .3s;
+}
+
+a:hover {
+  color: #0dc0c0;
+  text-decoration: none;
+}
+
+h2, h3, h4, h5, h6 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+h4, h5 {
+  color: #444;
+  font-size: 18px;
+}
+
+.breadcrumbs {
+    width: 100%;
+    background-color: #222;
+    font-size: 13px;
+    display: block;
+}
+
+.breadcrumbs li {
+    float: left;
+}
+
+.breadcrumbs a {
+    color: #fff;
+}
+
+.breadcrumbs a:hover {
+    color: #0dc0c0;
+    transition: color .3s;
+}
+
+.breadcrumbs span {
+    font-weight: 700;
+    color: #fff;
+}
+
+.breadcrumbs li:after {
+    font-family: FontAwesome;
+    content: "\f105";
+    padding: 0 10px;
+    color: #fff;
+}
+
+.breadcrumbs li:last-child:after {
+    content: "";
+}
+
+.breadcrumbs ul {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 65px 15px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 40px;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.section-title {
+  color: #555;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.section-title h3 {
+  font-size: 32px;
+  font-weight: 300;
+}
+
+.gray-section {
+  background: #f4f4f4;
+}
+/*-------  ここまで共通のCSS  --------*/
+
+/*-------  ここからheader  --------*/
+header {
+  height: 65px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  line-height: 65px;
+  border-bottom: 1px solid #eee;
+  z-index: 10;
+}
+
+.header-title {
+  float: left;
+}
+
+.header-logo {
+  color: #777;
+  font-weight: 700;
+  font-size: 22px;
+  font-family: 'Dosis', sans-serif;
+}
+
+.logo {
+    height: 50px;
+    padding-top: 10px;
+}
+
+.header-menu-right {
+  float: right;
+}
+
+.header-menu-right li {
+  float: left;
+}
+
+.header-menu-right a {
+  font-weight: 700;
+  padding-left: 20px;
+}
+
+.header-menu-right a:hover {
+  color: #0dc0c0;
+  transition: color .3s;
+}
+
+.header-menu-right > li.menu-single {
+    position: relative;
+}
+
+ul.header-submenu-right {
+    visibility: hidden;
+    opacity: 0;
+}
+
+li.menu-single ul.header-submenu-right {
+    position: absolute;
+    top: 65px;
+    background: #555;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+li.menu-single:hover ul.header-submenu-right {
+    visibility: visible;
+    opacity: 1;
+}
+
+li.menu-second {
+    width: 100%;
+    white-space: nowrap;
+    border-top: 1px solid #999;
+}
+
+.menu-second a {
+  text-decoration: none;
+  color: #fff;
+  transition: all .3s;
+  padding: 0 20px 0 20px;
+}
+/*-------  ここまでheader  --------*/
+
+/*------- ここからmodal  -------*/
+.signup-modal-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  display: none;
+}
+
+.modal {
+  position: absolute;
+  top: 20%;
+  left: 34%;
+  background-color: #e6ecf0;
+  padding: 20px 0 40px;
+  border-radius: 10px;
+  width: 450px;
+  height: auto;
+  text-align: center;
+}
+
+.fa-times {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  color: rgba(128, 128, 128, 0.46);
+  cursor: pointer;
+}
+
+#signup-form {
+  width: 100%;
+}
+
+#signup-form h2 {
+  color: #5f5d60;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+}
+
+#signup-form input {
+  width: 320px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  padding: 12px 12px;
+  border: 1px solid #d0d5d8;
+  border-radius: 5px;
+}
+
+#submit-btn {
+  display: inline-block;
+  padding: 14px 140px;
+  background-color: #5dca88;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  margin: 10px auto;
+  cursor: pointer;
+}
+/*-------  ここまでmodal  -------*/
+
+/*-------  ここからtop content  --------*/
+.top-section {
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  background-image: url("images/top.jpg");
+  background-size: cover;
+}
+
+.inner-bg {
+  padding-top: 250px;
+  padding-bottom: 220px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.top-description {
+  margin-bottom: 20px;
+}
+
+.top-description h1 {
+  font-size: 48px;
+  margin-bottom: 30px;
+  letter-spacing: 5px;
+}
+
+.top-description p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 18px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 20px;
+  font-weight: 600;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.btn:hover {
+  color: #fff;
+}
+
+.btn-top-white {
+  background: rgba(250, 250, 250, 0.06);
+  border: 1px solid rgba(250, 250, 250, 0.15);
+  color: rgba(250, 250, 250, 0.9);
+}
+
+.btn-top-white:hover {
+  border: 1px solid rgba(250, 250, 250, 0.8);
+}
+/*-------  ここまでtop content  --------*/
+
+/*-------  ここからsocial  --------*/
+.social-section {
+  clear: left;
+  text-align: center;
+  padding-bottom: 70px;
+}
+
+.social-icon {
+  text-align: center;
+  font-size: 36px;
+  padding: 5px;
+  transition: all .3s;
+}
+/*-------  ここまでsocial  --------*/
+
+/*-------  ここからmega-footer  -------*/
+.mega-footer {
+    background-color: #222;
+}
+
+.mega-footer .container {
+    padding: 20px 15px;
+}
+
+.mega-footer .current {
+    font-weight: 700;
+    color: #5ba9f7;
+}
+
+.theme_megafooter_navi:after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+.theme_megafooter_navi ul {
+
+}
+
+.theme_megafooter_navi ul li {
+    float: left;
+    display: block;
+        width: 285px;
+}
+
+.theme_megafooter_navi ul li ul li {
+	display: block;
+	float: none;
+	font-size: 80%;
+}
+
+.theme_megafooter_navi ul li a {
+	padding: 5px 15px;
+	display: block;
+	font-weight: bold;
+    color: #888;
+}
+
+.theme_megafooter_navi ul li ul li a {
+	padding-left: 20px;
+	font-weight: normal;
+}
+/*-------  ここまでmega-footer  -------*/
+
+/*-------  ここからfooter  --------*/
+footer {
+  text-align: center;
+  padding: 40px 0;
+  background: #222;
+}
+/*-------  ここまでfooter  --------*/
