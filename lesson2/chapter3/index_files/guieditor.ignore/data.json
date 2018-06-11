@@ -31,16 +31,12 @@
       "dec": ""
      },
      {
-      "modId": "PlainHTMLElements:PlainHTML/image",
+      "modId": "PlainHTMLElements:PlainHTML/MultiText",
       "fields": {
-       "href": "",
-       "image_src": {
-        "resKey": "3b9cfaaa6fa8660562502bb6a864ff2d",
-        "path": "./index_files/resources/sitemap_title_4.jpg",
-        "resType": "",
-        "webUrl": ""
-       },
-       "alt_text": ""
+       "main": {
+        "src": "<h2><div class=\"sourceview\">\n<pre class=\"brush: html;\">\n&lt;meta name=&quot;keywords&quot; content=&quot;&lt;?= htmlspecialchars($px-&gt;site()-&gt;get_current_page_info(<font color=\"#d14\">&#039;keywords&#039;</font>)); ?&gt;&quot;&gt;\n</pre>\n</div></h2>",
+        "editor": ""
+       }
       },
       "anchor": "",
       "dec": ""

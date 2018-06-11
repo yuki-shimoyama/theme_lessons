@@ -23,7 +23,21 @@
 		display:inline;
 	}
 
+
 <?php
 print (new \tomk79\pickles2\px2dthelper\main($px))->document_modules()->build_css();
 ?>
+}
+
+.contents .sourceview {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.contents p {
+    padding-left: 2em;
+    font-size: 18px;
 }

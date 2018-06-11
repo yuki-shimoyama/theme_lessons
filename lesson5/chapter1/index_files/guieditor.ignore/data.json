@@ -20,13 +20,12 @@
       "dec": ""
      },
      {
-      "modId": "PlainHTMLElements:PlainHTML/MultiText",
+      "modId": "PlainHTMLElements:PlainHTML/Markdown",
       "fields": {
-       "main": {
-        "src": "",
-        "editor": "markdown"
-       }
-      }
+       "main": "\r\nこのコンテンツは、Markdown形式でページを生成するサンプルです。\r\n\r\nPickles Framework で Markdown を使用するには、ファイル名の最後に、拡張子 `.md` を追加します(例 `index.html` であれば、`index.html.md`)。\r\n\r\nどのように記述してこのHTMLがつくられているか、コンテンツのソースコードをみて確認してください。\r\n\r\n<!-- autoindex -->\r\n\r\n\r\n## H2見出しのサンプル\r\n\r\n### H3見出しのサンプル\r\n\r\n#### H4見出しのサンプル\r\n\r\n##### H5見出しのサンプル\r\n\r\n- リストのサンプル\r\n- リストのサンプル\r\n- リストのサンプル\r\n- リストのサンプル\r\n- リストのサンプル\r\n\r\n\r\n## HTMLやPHPコードを埋め込む\r\n\r\nマークダウン記法中に、HTMLやPHPコードを埋め込むことができます。\r\n\r\n<p>このテキストは、HTMLを直接書いて表現しています。</p>\r\n\r\n<?php\r\nprint '<p>このテキストは、直接実装したPHPコードが出力したものです。</p>';\r\n?>\r\n\r\n```\r\n<div class=\"sample\">\r\n    <p>Markdown でコードを記載するサンプル</p>\r\n</div>\r\n```\r\n\r\n\r\n"
+      },
+      "anchor": "",
+      "dec": ""
      }
     ]
    }

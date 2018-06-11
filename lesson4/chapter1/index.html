@@ -1,1 +1,25 @@
-<img src="./index_files/resources/no_image.jpg" alt="" />
+<img src="./index_files/resources/no_image.jpg" alt="" /><h2 id="-">プラグインを使ってローカルナビゲーションを作る場合には以下のプラグインを用います。</h2>
+<h2><div class="sourceview">
+<pre class="brush: html;">
+$theme-&gt;mk_sub_menu()
+</pre>
+</div></h2><h2 id="-1-">このプラグインは基準になるページから見た1つ下層のページの一覧を取得して出力してくれますが、（）の中に引数を渡してあげなければ取得することができません。そのため、引数として渡す変数を最初に定義する必要があります。今回はあらかじめ変数を定義していますので実際に記述する必要はありませんが、プラグインを用いる行より前の行で、以下のように記述します。</h2>
+<h2><div class="sourceview">
+<pre class="brush: html;">
+$category_top_id = $px-&gt;site()-&gt;get_category_top();
+</pre>
+</div></h2><h2 id="-category_top_id-1-category_top_id-1-">このように記述すると、変数（$category_top_id）に「今いるページが属するカテゴリの1つ上層のページ」を代入したことになるため、以降は（$category_top_id）を宣言するだけで「今いるページが属するカテゴリの1つ上層のページ」と宣言したことになります。この変数をプラグインの引数に用いることでローカルナビのプラグインが機能するようになります。</h2>
+<h2><div class="sourceview">
+<pre class="brush: html;">
+$theme-&gt;mk_sub_menu($category_top_id)
+</pre>
+</div></h2><h2 id="-html-">このプラグインを用いた時に出力されるHTMLの形式も見てみましょう。</h2>
+<h2><div class="sourceview">
+<pre class="brush: html;">
+&lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;/lesson4/chapter1/&quot; class=&quot;current&quot;&gt;ローカルナビをPHPに置き換えてみよう！&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;/lesson4/chapter2/&quot;&gt;メガフッターをPHPに置き換えてみよう！&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+</div></h2><h2 id="-ulli-li-ul-class-current-">下層ページの一覧がリストの形（&lt;ul&gt;&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;）で出力され、今いるページのクラスにカレント（class=&quot;current&quot;）が付きます。</h2>
+<h2 id="-php-">では実際にやってみてうまくいったら次のチャプターに進みましょう。次のチャプターではメガフッターをPHPに置き換えてみましょう。</h2>

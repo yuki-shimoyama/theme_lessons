@@ -9,7 +9,19 @@
       "fields": {
        "href": "/lesson5/chapter1/index.html",
        "text": {
-        "src": "## Chapter1：自作の関数を作って表示してみよう！",
+        "src": "## Chapter1：カスタムパンくずを作ってみよう！",
+        "editor": "markdown"
+       }
+      },
+      "anchor": "",
+      "dec": ""
+     },
+     {
+      "modId": "FESS:parts_links/link",
+      "fields": {
+       "href": "/lesson5/chapter2/index.html",
+       "text": {
+        "src": "## Chapter2：カスタムグロナビを作ってみよう！",
         "editor": "markdown"
        }
       },
@@ -17,7 +29,9 @@
       "dec": ""
      }
     ]
-   }
+   },
+   "anchor": "",
+   "dec": ""
   }
  }
 }

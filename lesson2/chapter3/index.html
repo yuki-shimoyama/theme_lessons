@@ -1,3 +1,7 @@
 <img src="./index_files/resources/no_image.jpg" alt="" /><h2 id="-head-head-php-">サイトマップからメタタグを出力するにはレイアウトのソースの中にある＜head＞＜/head＞タグの間に以下のようなPHPを挿入する必要があります。</h2>
-<img src="./index_files/resources/sitemap_title_4.jpg" alt="" /><h2 id="-font-color-d14-font-font-color-d14-keywords-font-keywords-meta-font-color-d14-description-font-description-meta-"><font color="#d14">赤文字</font>の部分を上記のように「<font color="#d14">&#39;keywords&#39;</font>」にした場合はサイトマップのＱ列にある「keywordsカラム」から「metaキーワード」が出力され、「<font color="#d14">&#39;description&#39;</font>」にした場合はサイトマップのＲ列にある「descriptionカラム」から「metaディスクリプション」が出力されるようになります。</h2>
+<h2><div class="sourceview">
+<pre class="brush: html;">
+&lt;meta name=&quot;keywords&quot; content=&quot;&lt;?= htmlspecialchars($px-&gt;site()-&gt;get_current_page_info(<font color="#d14">&#039;keywords&#039;</font>)); ?&gt;&quot;&gt;
+</pre>
+</div></h2><h2 id="-font-color-d14-font-font-color-d14-keywords-font-keywords-meta-font-color-d14-description-font-description-meta-"><font color="#d14">赤文字</font>の部分を上記のように「<font color="#d14">&#39;keywords&#39;</font>」にした場合はサイトマップのＱ列にある「keywordsカラム」から「metaキーワード」が出力され、「<font color="#d14">&#39;description&#39;</font>」にした場合はサイトマップのＲ列にある「descriptionカラム」から「metaディスクリプション」が出力されるようになります。</h2>
 <h2 id="-keywords-description-h1-">「keywordsカラム」「descriptionカラム」に何も設定されていない場合、それぞれ何も出力されませんので必要に応じて設定していきましょう。次のチャプターではページ名を＜h1＞用に出力する方法について詳しく見ていきましょう。</h2>

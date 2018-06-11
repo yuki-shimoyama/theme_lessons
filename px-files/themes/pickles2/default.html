@@ -3,9 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Pickles2 テーマ入門講座</title>
+<!--  ↓ページ名フル↓  -->
+    <title>ページ名｜サイト名</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700">
+<!--  ↓外部スタイルシート読み込み↓  -->
     <link rel="stylesheet" href="/common/px_resources/p/theme/pickles2/styles/style.css">
     <!--コンテンツの環境構築を読み込んで出力 -->
     <?= $px->get_contents_manifesto(); ?>
@@ -15,10 +17,11 @@
     <header>
       <div class="container">
         <div class="header-title">
+<!--  ↓画像読み込み↓  -->
             <a href="/"><img class="logo" src="/common/px_resources/p/theme/pickles2/images/header-logo_px.svg"></a>
         </div>
-<!-- グローバルナビゲーションはここから -->
         <div class="header-menu">
+<!-- グローバルナビゲーションはここから --><!--<?= $theme->mk_global_menu() ?>-->
           <ul class="header-menu-right">
             <li class="menu-single">
               <a href="/lesson1/">テーマを知る</a>
@@ -50,31 +53,29 @@
             <li class="menu-single">
               <a href="/lesson4/">置き換えてみよう</a>
               <ul class="header-submenu-right">
-                  <li class="menu-second"><a href="/lesson4/chapter1/">パンくずをPHPに置き換えてみよう！</a></li>
-                  <li class="menu-second"><a href="/lesson4/chapter2/">グローバルナビゲーションをPHPに置き換えてみよう！</a></li>
-                  <li class="menu-second"><a href="/lesson4/chapter3/">サブメニューをPHPに置き換えてみよう！</a></li>
-                  <li class="menu-second"><a href="/lesson4/chapter4/">サイドメニューをPHPに置き換えてみよう！</a></li>
-                  <li class="menu-second"><a href="/lesson4/chapter5/">メガフッターをPHPに置き換えてみよう！</a></li>
+                  <li class="menu-second"><a href="/lesson4/chapter1/">ローカルナビをPHPに置き換えてみよう！</a></li>
+                  <li class="menu-second"><a href="/lesson4/chapter2/">メガフッターをPHPに置き換えてみよう！</a></li>
               </ul>
             </li>
             <li class="menu-single">
               <a href="/lesson5/">自作してみよう</a>
               <ul class="header-submenu-right">
-                  <li class="menu-second"><a href="/lesson5/chapter1/">自作の関数を作って表示してみよう！</a></li>
+                  <li class="menu-second"><a href="/lesson5/chapter1/">カスタムパンくずを作ってみよう！</a></li>
+                  <li class="menu-second"><a href="/lesson5/chapter2/">カスタムグロナビを作ってみよう！</a></li>
               </ul>
             </li>
             <li class="menu-single">
                 <a href="https://packagist.org/packages/pickles2/px2-multitheme" target="_blank">Packagist</a>
             </li>
-          </ul>
-        </div>
+        </ul>
 <!-- グローバルナビゲーションはここまで -->
+        </div>
       </div>
     </header>
 
     <!-- Bresdcrumbs -->
-<!-- パンくずはここから -->
     <div class="breadcrumbs">
+<!-- パンくずはここから --><!--<?= $theme->mk_breadcrumb() ?>-->
         <ul class="breadcrumbs-inner">
             <li>
                 <a href="/"><i class="fa fa-home"></i></a>
@@ -86,36 +87,39 @@
                 <span>コンテンツ</span>
             </li>
         </ul>
-    </div>
 <!-- パンくずはここまで -->
+    </div>
 
     <!-- Contents -->
     <div id ="contents" class="contents-section">
       <div class="contents-section-inner">
         <div class="container">
             <div class="section-title">
+<!--  ↓ページ名＜h1＞用↓  -->
               <h1>＜h１タイトル＞</h1>
             </div>
             <div class="contents-all">
                 <div class="contents-left">
-                    <div class="contents" <?= htmlspecialchars($theme->get_attr_bowl_name_by())?>="main">
+                    <div class="contents" <?= htmlspecialchars($theme->get_attr_bowl_name_by()) ?>="main">
                         <?= $px->bowl()->get_clean() ?>
                     </div>
                 </div>
                 <div class="contents-right">
-<!-- ショルダーナビはここから -->
                     <div class="col-sm-3">
                         <nav class="theme_common_navi">
-                            <p><a href="/lesson1/">カテゴリ</a></p>
-                            <ul>
+<!-- ローカルナビはここから --><?php $category_top_id = $px->site()->get_category_top(); ?>
+                                <p><a href="<?= htmlspecialchars( $px->href($category_top_id) ) ?>"><?= htmlspecialchars($px->site()->get_page_info($category_top_id, 'title_label')) ?></a></p>
+                            <!--<p><a href="/lesson1/">カテゴリ</a></p>-->
+                            <?= $theme->mk_sub_menu($category_top_id) ?>
+                            <!--<ul>
                                 <li><a href="#">Chapter1</a></li>
                                 <li><a href="#">Chapter2</a></li>
                                 <li><a href="#">Chapter3</a></li>
                                 <li><a href="#">Chpater4</a></li>
-                            </ul>
+                            </ul>-->
+<!-- ローカルナビはここまで -->
                         </nav>
                     </div>
-<!-- ショルダーナビはここまで -->
                 </div>
             </div>
         </div>
@@ -143,6 +147,7 @@
     <div class="mega-footer">
         <div class="container">
             <nav class="theme_megafooter_navi">
+<!-- メガフッターはここから  --><!--<?= $theme->mk_megafooter_menu() ?>-->
                 <ul>
                     <li><a href="/lesson1/" class="current">カテゴリ</a>
                         <ul>
@@ -185,6 +190,7 @@
                     <li><a href="https://packagist.org/packages/pickles2/px2-multitheme" target="_blank">Packagist</a>
                     </li>
                 </ul>
+<!-- メガフッターはここまで  -->
         	</nav>
         </div>
     </div>

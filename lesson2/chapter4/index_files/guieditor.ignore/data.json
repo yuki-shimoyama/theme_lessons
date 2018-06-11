@@ -31,16 +31,12 @@
       "dec": ""
      },
      {
-      "modId": "PlainHTMLElements:PlainHTML/image",
+      "modId": "PlainHTMLElements:PlainHTML/MultiText",
       "fields": {
-       "href": "",
-       "image_src": {
-        "resKey": "146e834a1540b27294ba96787716bcb4",
-        "path": "./index_files/resources/github_tomk79_4.jpg",
-        "resType": "",
-        "webUrl": ""
-       },
-       "alt_text": ""
+       "main": {
+        "src": "<h2><div class=\"sourceview\">\n<pre class=\"brush: html;\">\n&lt;h1&gt;&lt;?= preg_replace(&#039;/\\r\\n|\\r|\\n/s&#039;,&#039;&lt;br&gt;&#039;, htmlspecialchars($px-&gt;site()-&gt;get_current_page_info(&#039;title_h1&#039;)) ); ?&gt;&lt;/h1&gt;\n</pre>\n</div></h2>",
+        "editor": ""
+       }
       },
       "anchor": "",
       "dec": ""

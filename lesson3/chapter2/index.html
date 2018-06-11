@@ -1,4 +1,8 @@
-<img src="./index_files/resources/no_image.jpg" alt="" /><h2 id="-javascript-head-body-font-color-d14-script-src-htmlspecialchars-theme-files-script-font-">外部JavaScriptを読み込む場合にはheadセクション内またはbodyセクション最下部に「<font color="#d14">&lt;script src=&quot;&lt;?= htmlspecialchars( $theme -&gt; files(&#039;/フォルダ名/ファイル名&#039;)); ?&gt;&quot;&gt;&lt;/script&gt;</font>」と記述します。</h2>
-<h2 id="js-font-color-d14-px-files-themes-pickles2-theme_files-font-theme_files-">JSファイルを置く場所は「<font color="#d14">px-files &gt; themes &gt; pickles2 &gt; theme_files &gt; フォルダ名</font>」となりますが、初期状態ではフォルダがありませんのでtheme_filesフォルダの下に新しくフォルダを作成してから置いてください。</h2>
+<img src="./index_files/resources/no_image.jpg" alt="" /><h2 id="-javascript-head-body-">外部JavaScriptを読み込む場合にはheadセクション内またはbodyセクション最下部に以下のように記述します。</h2>
+<h2><div class="sourceview">
+<pre class="brush: html;">
+&lt;script src=&quot;&lt;?= htmlspecialchars( $theme -&gt; files(&#039;/フォルダ名/ファイル名&#039;)); ?&gt;&quot;&gt;&lt;/script&gt;
+</pre>
+</div></h2><h2 id="js-font-color-d14-px-files-themes-pickles2-theme_files-font-theme_files-">JSファイルを置く場所は「<font color="#d14">px-files &gt; themes &gt; pickles2 &gt; theme_files &gt; フォルダ名</font>」となりますが、初期状態ではフォルダがありませんのでtheme_filesフォルダの下に新しくフォルダを作成してから置いてください。</h2>
 <h2 id="-html-script-src-theme_files-script-script-src-common-px_resources-p-theme-pickles2-script-">こちらもレイアウトファイルとの相対関係でHTMLとして出力される際には「&lt;script src=&quot;/theme_files/フォルダ名/ファイル名&quot;&gt;&lt;/script&gt;」となりそうですが、実際には「&lt;script src=&quot;/common/px_resources/p/theme/pickles2/フォルダ名/ファイル名&quot;&gt;&lt;/script&gt;」と出力されますので覚えておくと良いでしょう。</h2>
 <h2 id="-">では実際にやってみてうまくいったら次のチャプターに進みましょう。次のチャプターでは画像の読み込みに挑戦してみましょう。</h2>
