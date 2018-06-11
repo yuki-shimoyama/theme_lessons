@@ -1,0 +1,26 @@
+{
+ "bowl": {
+  "main": {
+   "modId": "_sys/root",
+   "fields": {
+    "main": [
+     {
+      "modId": "PlainHTMLElements:PlainHTML/image",
+      "fields": {
+       "href": "",
+       "image_src": {
+        "resKey": "67b1e0b18c4d7c288fa193d3d23497f0",
+        "path": "./index_files/resources/no_image.jpg",
+        "resType": "",
+        "webUrl": ""
+       },
+       "alt_text": ""
+      },
+      "anchor": "",
+      "dec": ""
+     }
+    ]
+   }
+  }
+ }
+}
